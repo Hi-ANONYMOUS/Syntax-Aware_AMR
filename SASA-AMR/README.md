@@ -1,5 +1,5 @@
 # SASA
-syntax-aware self-attention amr-parser
+syntax-aware self-attention network
 
 ## Installation
 
@@ -11,8 +11,6 @@ As a prerequisite, the following requirements should be satisfied. Please instal
 
 `SASA` can be installed from source, you can download it and run it in command line or IDE (i.e. Pycharm):
 ```shell script
-unzip SASA-AMR.zip SASA-AMR
-cd /your_path/SASA-AMR/
 pip install -r requirements.txt
 pip install -e .
 mkdir data/AMR/temp/
@@ -55,13 +53,4 @@ entity linking system on the prediction amr file. Please refer to [Spring](https
 
 To have comparable Smatch scores you will also need to use the scripts available at https://github.com/mdtux89/amr-evaluation
 
-## Pretrained Checkpoints
 
-You can download the pretrained model in BaiduNetDisk, and put them in the output directory (`runs/`):
-```
-URL：https://pan.baidu.com/s/1XWVeKmnnY2kPJLXW-8nxRA 
-Password：SASA 
-```
-
-## Acknowledgements
-Our code is based on [Spring](https://github.com/SapienzaNLP/spring). Thanks for their high quality open codebase.
