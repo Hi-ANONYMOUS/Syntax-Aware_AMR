@@ -1,0 +1,88 @@
+name: baseline+smart_init
+model: facebook/bart-large
+#model: facebook/bart-base
+
+# <--------------
+# Linearizations
+# Comment DFS and uncomment the relevant block if you want to use a different linearization scheme
+
+# DFS
+penman_linearization: True
+use_pointer_tokens: True
+raw_graph: False
+
+remove_wiki: False
+dereify: False
+collapse_name_ops: False
+
+# Hparams
+batch_size: 500
+beam_size: 1
+dropout: 0.25
+attention_dropout: 0.0
+smart_init: True
+accum_steps: 10
+warmup_steps: 1
+training_steps: 250000
+weight_decay: 0.004
+grad_norm: 2.5
+scheduler: constant
+learning_rate: 0.00005
+max_epochs: 30
+save_checkpoints: True
+log_wandb: False
+warm_start: True
+use_recategorization: False
+best_loss: False
+remove_longer_than: 1024
+
+
+#
+dep_head_number: 4
+normal_head_number: 12
+dep_layer_begin_index: 0
+dep_layer_end_index : 3
+strategy: HARD
+node_dropping: 0.9
+# please  choose one [AMR2.0 / AMR3.0 / sample……]
+data_type: AMR3.0
+
+
+
+
+
+# ------------------Data---------------------------------
+#-----sample
+#train: data/AMR/sample/train.txt
+#dev: data/AMR/sample/dev.txt
+#test: data/AMR/sample/test.txt
+#
+#train_dep_file: data/AMR/sample/train_dep.json
+#dev_dep_file: data/AMR/sample/dev_dep.json
+#test_dep_file: data/AMR/sample/test_dep.json
+
+
+#----AMR2.0
+train: data/AMR/amr_2.0/train.txt
+dev: data/AMR/amr_2.0/dev.txt
+test: data/AMR/amr_2.0/test.txt
+
+#dep file
+#train_dep_file: data/AMR/amr_2.0/amr_train_dep_direct_adj_stanza.json
+#dev_dep_file: data/AMR/amr_2.0/amr_dev_dep_direct_adj_stanza.json
+
+
+#----AMR3.0
+#train: data/AMR/amr_3.0/train.txt
+#dev: data/AMR/amr_3.0/dev.txt
+#test: data/AMR/amr_3.0/test.txt
+
+#dep file
+train_dep_file: data/AMR/amr_3.0/amr_train_dep_direct_adj_stanza.json
+dev_dep_file: data/AMR/amr_3.0/amr_dev_dep_direct_adj_stanza.json
+
+# ----min
+#dev: data/AMR/amr_2.0/min/dev_min.txt
+#train: data/AMR/amr_2.0/min/train_min.txt
+#train_dep_file: data/AMR/amr_2.0/min/train_dep_min.json
+#dev_dep_file: data/AMR/amr_2.0/min/dev_dep_min.json

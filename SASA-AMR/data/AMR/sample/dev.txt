@@ -1,0 +1,185 @@
+# ::id bolt12_64545_0526.1 ::date 2012-12-23T18:47:13 ::annotator SDL-AMR-09 ::preferred
+# ::snt There are many who have a sense of urgency, quietly watching how things develop,you are dragons coiling, you are tigers crouching, I admire noble-minded patriots.
+# ::save-date Fri Jul 24, 2015 ::file bolt12_64545_0526_1.txt
+(m / multi-sentence
+      :snt1 (m2 / many
+            :ARG0-of (s / sense-01
+                  :ARG1 (u / urgency)
+                  :time (w / watch-01
+                        :ARG0 m2
+                        :ARG1 (t3 / thing
+                              :manner-of (d / develop-02
+                                    :ARG0 (t / thing)))
+                        :manner (q / quiet-04
+                              :ARG1 m2))))
+      :snt2 (d2 / dragon
+            :domain (y / you)
+            :ARG0-of (c / coil-01))
+      :snt3 (t2 / tiger
+            :domain (y2 / you)
+            :ARG0-of (c2 / crouch-01))
+      :snt4 (a / admire-01
+            :ARG0 (i / i)
+            :ARG1 (p / patriot
+                  :ARG0-of (m3 / mind-04
+                        :mod (n / noble)))))
+
+# ::id bolt12_64545_0526.2 ::date 2012-12-23T18:55:47 ::annotator SDL-AMR-09 ::preferred
+# ::snt Has history given us too many lessons?, 530, 412, 64
+# ::save-date Mon Nov 25, 2013 ::file bolt12_64545_0526_2.txt
+(m2 / multi-sentence
+      :snt1 (g / give-01 :mode interrogative
+            :ARG0 (h / history)
+            :ARG1 (l / lesson
+                  :quant (m / many
+                        :degree (t / too)))
+            :ARG2 (w / we))
+      :snt2 (a / and :op1 530 :op2 412 :op2 64))
+
+# ::id bolt12_64545_0527.1 ::date 2012-12-23T18:59:06 ::annotator SDL-AMR-09 ::preferred
+# ::snt taking a look
+# ::save-date Mon Nov 25, 2013 ::file bolt12_64545_0527_1.txt
+(l / look-01)
+
+# ::id bolt12_64545_0528.1 ::date 2012-12-23T19:02:02 ::annotator SDL-AMR-09 ::preferred
+# ::snt the ones who are suffering are the ordinary people: even if the body of a salted fish is turned over, it is still a salted fish ...
+# ::save-date Mon Jan 27, 2014 ::file bolt12_64545_0528_1.txt
+(m / multi-sentence
+      :snt1 (s / suffer-01
+            :ARG0 (p / person
+                  :mod (o2 / ordinary)))
+      :snt2 (f / fish
+            :ARG1-of (s2 / salt-01)
+            :mod (s3 / still)
+            :domain f2
+            :concession (e / even-if
+                  :op1 (t / turn-01
+                        :ARG1 (b / body
+                              :poss (f2 / fish
+                                    :ARG1-of (s4 / salt-01)))
+                        :direction (o3 / over)))))
+
+# ::id bolt12_64545_0529.1 ::date 2012-12-23T19:05:48 ::annotator SDL-AMR-09 ::preferred
+# ::snt Freedom of speech\thought, if people express a view somewhat different than the traditional view, and put forward slightly different criticism, then they are called slaves of foreigners, or are accused of reverence for and fascination by foreign things,
+# ::save-date Tue Apr 28, 2015 ::file bolt12_64545_0529_1.txt
+(o / or
+      :op1 (c / call-01
+            :ARG1 (p / person)
+            :ARG2 (s / slave
+                  :poss (f / foreign)))
+      :op2 (a / accuse-01
+            :ARG1 p
+            :ARG2 (a2 / and
+                  :op1 (r / revere-01
+                        :ARG0 p
+                        :ARG1 (t / thing
+                              :mod (f3 / foreign)))
+                  :op2 (f2 / fascinate-01
+                        :ARG0 t
+                        :ARG1 p)))
+      :condition (a3 / and
+            :op1 (e / express-01
+                  :ARG0 p
+                  :ARG1 (v / view-02
+                        :ARG0 p
+                        :ARG1-of (d / differ-02
+                              :degree (s3 / somewhat)
+                              :compared-to (v2 / view-02
+                                    :mod (t2 / tradition)))))
+            :op2 (c2 / criticize-01
+                  :ARG0 p
+                  :ARG1-of (d2 / differ-02
+                        :degree (s4 / slight))))
+      :topic (f4 / free-04
+            :ARG3 (s5 / slash
+                  :op1 (s2 / speak-01)
+                  :op2 (t3 / think-01))))
+
+# ::id bolt12_64545_0529.2 ::date 2012-12-23T19:59:16 ::annotator SDL-AMR-09 ::preferred
+# ::snt What is more they are considered traitors of China, which is a fact of cultural tyranny in the cloak of nationalism and patriotism.
+# ::save-date Sun Dec 8, 2013 ::file bolt12_64545_0529_2.txt
+(c / consider-01
+      :ARG1 (p2 / person
+            :domain (t2 / they)
+            :ARG0-of (b / betray-01
+                  :ARG1 (c2 / country :wiki "China"
+                        :name (n2 / name :op1 "China"))))
+      :mod (m / more)
+      :mod (t4 / tyrannize-01
+            :ARG2 (c3 / culture)
+            :ARG1-of (c4 / cloak-01
+                  :ARG2 (a / and
+                        :op1 (n / nationalism)
+                        :op2 (p / patriotism)))))
+
+# ::id bolt12_64545_0530.1 ::date 2012-12-23T20:12:11 ::annotator SDL-AMR-09 ::preferred
+# ::snt In fact, the US no longer needs to use force to deal with China, they have achieved the result of "defeating enemy soldiers without fighting".
+# ::save-date Thu Jul 23, 2015 ::file bolt12_64545_0530_1.txt
+(c3 / cause-01
+      :ARG0 (a2 / achieve-01
+            :ARG0 c
+            :ARG1 (r / result-01
+                  :ARG2 (d2 / defeat-01
+                        :ARG0 c
+                        :ARG1 (s / soldier
+                              :ARG0-of (h / have-rel-role-91
+                                    :ARG1 c
+                                    :ARG2 (e2 / enemy)))
+                        :manner (f3 / fight-01 :polarity -
+                              :ARG0 c))))
+      :ARG1 (n / need-01
+            :ARG0 (c / country :wiki "United_States" :name (n3 / name :op1 "US"))
+            :ARG1 (u / use-01
+                  :ARG0 c
+                  :ARG1 (f / force-04)
+                  :ARG2 (d / deal-01
+                        :ARG0 c
+                        :ARG2 (c2 / country :wiki "China" :name (n2 / name :op1 "China"))))
+            :time (n4 / no-longer)
+            :mod (i / in-fact)))
+
+# ::id bolt12_64545_0531.1 ::date 2012-12-23T20:21:33 ::annotator SDL-AMR-09 ::preferred
+# ::snt Is the article too intense, is the United States so good?
+# ::save-date Mon Dec 7, 2015 ::file bolt12_64545_0531_1.txt
+(m / multi-sentence
+      :snt1 (i / intense-02 :mode interrogative
+            :ARG1 (a / article)
+            :degree (t / too))
+      :snt2 (g / good-02 :mode interrogative
+            :ARG1 (c / country :wiki "United_States" :name (n / name :op1 "United" :op2 "States"))
+            :degree (s / so)))
+
+# ::id bolt12_64545_0531.2 ::date 2012-12-23T20:27:04 ::annotator SDL-AMR-09 ::preferred
+# ::snt If things are not seen by eyes and heard by ears yourself, do not assume their existence, three people create a tiger.
+# ::save-date Mon Nov 25, 2013 ::file bolt12_64545_0531_2.txt
+(m / multi-sentence
+      :snt1 (a / assume-02 :polarity - :mode imperative
+            :ARG0 y
+            :ARG1 (e / exist-01
+                  :ARG1 t2)
+            :condition (a2 / and
+                  :op1 (s / see-01 :polarity -
+                        :ARG0 (e2 / eye
+                              :part-of (y / you))
+                        :ARG1 (t2 / thing))
+                  :op2 (h / hear-01 :polarity -
+                        :ARG0 (e3 / ear
+                              :part-of y)
+                        :ARG1 t2)))
+      :snt2 (c / create-01
+            :ARG0 (p / person :quant 3)
+            :ARG1 (t / tiger)))
+
+# ::id bolt12_64545_0532.1 ::date 2012-12-23T20:29:54 ::annotator SDL-AMR-09 ::preferred
+# ::snt Just passing by and taking a look. Won't express my opinion
+# ::save-date Thu May 14, 2015 ::file bolt12_64545_0532_1.txt
+(m / multi-sentence
+      :snt1 (a / and
+            :op1 (p / pass-by-17
+                  :mod (j / just))
+            :op2 (l / look-01))
+      :snt2 (e / express-01 :polarity -
+            :ARG0 (i / i)
+            :ARG1 (t / thing
+                  :ARG1-of (o / opine-01
+                        :ARG0 i))))

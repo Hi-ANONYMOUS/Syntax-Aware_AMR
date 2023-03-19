@@ -1,0 +1,79 @@
+name: baseline+smart_init
+#model: facebook/bart-large
+model: facebook/bart-base
+
+# <--------------
+# Linearizations
+# Comment DFS and uncomment the relevant block if you want to use a different linearization scheme
+
+# DFS
+penman_linearization: True
+use_pointer_tokens: True
+raw_graph: False
+
+# BFS
+# penman_linearization: False
+# use_pointer_tokens: True
+# raw_graph: False
+
+# PENMAN
+# penman_linearization: True
+# use_pointer_tokens: False
+# raw_graph: False
+
+# BART baseline
+# penman_linearization: True
+# use_pointer_tokens: False
+# raw_graph: True
+
+remove_wiki: False
+dereify: False
+collapse_name_ops: False
+
+#
+# Hparams
+batch_size: 500
+beam_size: 1
+dropout: 0.25
+attention_dropout: 0.0
+smart_init: True
+accum_steps: 10
+warmup_steps: 1
+training_steps: 250000
+weight_decay: 0.004
+grad_norm: 2.5
+scheduler: constant
+learning_rate: 0.00005
+max_epochs: 30
+save_checkpoints: True
+log_wandb: False
+warm_start: True
+use_recategorization: False
+best_loss: False
+remove_longer_than: 1024
+
+
+
+dep_vocab_file: configs/dep_gold_vocab.txt
+
+# <----------------------
+# Data: replace DATA below with the root of your AMR 2/3 release folder
+#test: data/AMR/amr_2.0/test.txt
+#train: data/AMR/amr_2.0/train.txt
+#dev: data/AMR/amr_2.0/dev.txt
+#train_dep_file: data/AMR/amr_2.0/2_amr2.0_train_dep.json
+#dev_dep_file: data/AMR/amr_2.0/2_amr2.0_dev_dep.json
+
+test: data/AMR/amr_3.0/test.txt
+train: data/AMR/amr_3.0/train.txt
+dev: data/AMR/amr_3.0/dev.txt
+train_dep_file: data/AMR/amr_3.0/2_amr3.0_train_dep.json
+dev_dep_file: data/AMR/amr_3.0/2_amr3.0_dev_dep.json
+
+
+# --------min--------
+#dev: data/AMR/min/dev_min.txt
+#train: data/AMR/min/train_min.txt
+#train_dep_file: data/AMR/min/amr2.0_train_dep_min.txt
+#dev_dep_file: data/AMR/min/amr2.0_dev_dep_min.txt
+
