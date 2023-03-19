@@ -1,0 +1,563 @@
+# ::id bolt12_07_4800.1 ::date 2012-12-19T12:53:14 ::annotator SDL-AMR-09 ::preferred
+# ::snt Establishing Models in Industrial Innovation
+# ::save-date Wed Oct 30, 2013 ::file bolt12_07_4800_1.txt
+(e / establish-01
+  :ARG1 (m / model
+          :mod (i / innovate-01
+                 :ARG1 (i2 / industry))))
+
+# ::id bolt12_07_4800.2 ::date 2012-12-19T14:01:36 ::annotator SDL-AMR-09 ::preferred
+# ::snt After its competitor invented the front loading washing machine, the CEO of the American IM company believed that each of its employees had the ability for innovation , and formulated strategic countermeasures for innovation in the industry.
+# ::save-date Fri Oct 16, 2015 ::file bolt12_07_4800_2.txt
+(a / and
+      :op1 (b / believe-01
+            :ARG0 (p2 / person
+                  :ARG0-of (h2 / have-org-role-91
+                        :ARG1 (c2 / company :wiki - :name (n / name :op1 "IM")
+                              :mod (c3 / country :wiki "United_States" :name (n2 / name :op1 "United" :op2 "States")))
+                        :ARG2 (o / officer
+                              :mod (e3 / executive)
+                              :mod (c7 / chief))))
+            :ARG1 (c8 / capable-01
+                  :ARG1 (p / person
+                        :ARG1-of (e / employ-01
+                              :ARG0 c2)
+                        :mod (e2 / each))
+                  :ARG2 (i / innovate-01
+                        :ARG0 p)))
+      :op2 (f / formulate-01
+            :ARG0 (o2 / officer
+                  :mod (e4 / executive)
+                  :mod (c / chief))
+            :ARG1 (c4 / countermeasure
+                  :mod (s / strategy)
+                  :purpose (i2 / innovate-01
+                        :prep-in (i3 / industry))))
+      :time (a3 / after
+            :op1 (i4 / invent-01
+                  :ARG0 (c5 / company
+                        :ARG0-of (c6 / compete-02
+                              :ARG1 c2))
+                  :ARG1 (m / machine
+                        :ARG0-of (w / wash-01)
+                        :ARG1-of (l / load-01
+                              :mod (f2 / front))))))
+
+# ::id bolt12_07_4800.3 ::date 2012-12-20T08:37:49 ::annotator SDL-AMR-09 ::preferred
+# ::snt 1. Establish an innovation fund with a maximum amount of 1,000 U.S. dollars.
+# ::save-date Mon Oct 12, 2015 ::file bolt12_07_4800_3.txt
+(e / establish-01 :li 1
+      :ARG1 (f2 / fund
+            :purpose (i / innovate-01)
+            :ARG1-of (a / amount-01
+                  :ARG2 (a2 / at-most
+                        :op1 (m / monetary-quantity :quant 1000
+                              :unit (d / dollar
+                                    :mod (c / country :wiki "United_States"
+                                          :name (n / name :op1 "United" :op2 "States"))))))))
+
+# ::id bolt12_07_4800.4 ::date 2012-12-20T08:39:47 ::annotator SDL-AMR-09 ::preferred
+# ::snt 2. Choose 100 innovative concepts to encourage employees to conduct research and development during their work time or spare time.
+# ::save-date Wed Dec 3, 2014 ::file bolt12_07_4800_4.txt
+(c / choose-01
+      :ARG1 (c2 / concept :quant 100
+            :ARG1-of (i / innovate-01))
+      :li 2
+      :purpose (e / encourage-01
+            :ARG0 c2
+            :ARG1 (p / person
+                  :ARG1-of (e2 / employ-01))
+            :ARG2 (a / and
+                  :op1 (r / research-01
+                        :ARG0 p)
+                  :op2 (d / develop-02
+                        :ARG0 p)
+                  :time (o / or
+                        :op1 (w / work-01
+                              :ARG0 p)
+                        :op2 (t2 / time
+                              :poss p
+                              :mod (s / spare))))))
+
+# ::id bolt12_07_4800.5 ::date 2012-12-20T09:54:09 ::annotator SDL-AMR-09 ::preferred
+# ::snt 3. From among them, pick out 50 for submission to an assessment committee to assess.
+# ::save-date Thu Jan 9, 2014 ::file bolt12_07_4800_5.txt
+(p / pick-out-03
+      :ARG1 (t / thing :quant 50
+            :ARG1-of (s / submit-01
+                  :ARG2 (c / committee
+                        :ARG0-of (a / assess-01))
+                  :ARG3 (a2 / assess-01
+                        :ARG0 c
+                        :ARG1 t)))
+      :ARG2 (t2 / they)
+      :li 3)
+
+# ::id bolt12_10465_5552.1 ::date 2012-12-03T16:21:13 ::annotator SDL-AMR-09 ::preferred
+# ::snt Since the Tangshan Earthquake, the starting point for construction standards in the mainland is that under an earthquake of the same magnitude, buildings should preserve their basic frame without collapsing.
+# ::save-date Fri May 29, 2015 ::file bolt12_10465_5552_1.txt
+(p2 / point
+      :mod (s / start-01
+            :ARG1 (s2 / standard
+                  :mod (c3 / construct-01)))
+      :location (m / mainland)
+      :domain (r / recommend-01
+            :ARG1 (p / preserve-01
+                  :ARG0 (b / building)
+                  :ARG1 (f / frame
+                        :part-of (t / thing)
+                        :mod (b2 / basic)
+                        :poss b)
+                  :manner (c2 / collapse-01 :polarity -
+                        :ARG1 f))
+            :time (s3 / since
+                  :op1 (e / earthquake :wiki "1976_Tangshan_earthquake" :name (n / name :op1 "Tangshan")))
+            :condition (e2 / earthquake
+                  :mod (m2 / magnitude
+                        :ARG1-of (s4 / same-01
+                              :ARG2 (m3 / magnitude
+                                    :poss e))))))
+
+# ::id bolt12_10465_5552.2 ::date 2012-12-06T18:54:12 ::annotator SDL-AMR-09 ::preferred
+# ::snt However, most of the buildings in this hard-hit area did not meet these requirements, with the widespread collapse of school buildings in particular arousing intense public disgust.
+# ::save-date Mon Jul 27, 2015 ::file bolt12_10465_5552_2.txt
+(c / contrast-01
+      :ARG2 (a / and
+            :op1 (m / meet-01 :polarity -
+                  :ARG0 (b / building
+                        :quant (m2 / most)
+                        :ARG1-of (i2 / include-91
+                              :ARG2 (b3 / building
+                                    :location (a3 / area
+                                          :ARG1-of (h / hit-01
+                                                :ARG1-of (h2 / hard-04))
+                                          :mod (t5 / this)))))
+                  :ARG1 (t2 / thing
+                        :ARG1-of (r / require-01)
+                        :mod (t3 / this)))
+            :op2 (a2 / arouse-01
+                  :ARG0 (c2 / collapse-01
+                        :ARG1 (b2 / building
+                              :mod (s3 / school))
+                        :ARG1-of (s2 / spread-02
+                              :ARG1-of (w / wide-02)))
+                  :ARG1 (d / disgust-01
+                        :ARG1 (p / public)
+                        :ARG1-of (i / intense-02))
+                  :mod (p2 / particular))))
+
+# ::id bolt12_10465_5552.3 ::date 2012-12-06T19:17:17 ::annotator SDL-AMR-09 ::preferred
+# ::snt Raising standards to in excess of Tangshan's 8.0 magnitude could leave authorities with some breathing space for explanation, and alleviate public anger.
+# ::save-date Thu Jul 30, 2015 ::file bolt12_10465_5552_3.txt
+(p / possible-01
+      :ARG1 (a / and
+            :op1 (l / leave-13
+                  :ARG0 (r / raise-01
+                        :ARG1 (s / standard)
+                        :ARG4 (i / in-excess-of
+                              :op1 (s2 / seismic-quantity :quant 8.0
+                                    :poss (e2 / earthquake :wiki "1976_Tangshan_earthquake" :name (n / name :op1 "Tangshan")))))
+                  :ARG1 (h / have-03
+                        :ARG0 (a3 / authority)
+                        :ARG1 (s3 / space
+                              :mod (b / breathe-01)
+                              :quant (s4 / some)
+                              :purpose (e3 / explain-01
+                                    :ARG0 a3))))
+            :op2 (a2 / alleviate-01
+                  :ARG0 r
+                  :ARG1 (a4 / anger-01
+                        :ARG1 (p2 / public)))))
+
+# ::id bolt12_10465_5552.4 ::date 2012-12-06T19:24:52 ::annotator SDL-AMR-09 ::preferred
+# ::snt According to information leaked from numerous channels, we can say for certain that before the earthquake struck, the serious earthquake risk in the Ngawa region was already well known to the CCP.
+# ::save-date Thu Feb 4, 2016 ::file bolt12_10465_5552_4.txt
+(s / say-01
+      :ARG0 (i2 / information
+            :ARG1-of (l / leak-01
+                  :ARG0 (c / channel
+                        :quant (n / numerous))))
+      :ARG1 (p / possible-01
+            :ARG1 (s2 / say-01
+                  :ARG0 (w / we)
+                  :ARG1 (k / know-02
+                        :ARG0 (p2 / political-party :wiki "Communist_Party_of_China" :name (n3 / name :op1 "CCP"))
+                        :ARG1 (r / risk-01
+                              :ARG2 (e / earthquake)
+                              :ARG1-of (s4 / serious-02)
+                              :location (l2 / local-region :wiki "Ngawa_Tibetan_and_Qiang_Autonomous_Prefecture" :name (n2 / name :op1 "Ngawa")))
+                        :time (b / before
+                              :op1 (s3 / strike-01
+                                    :ARG2 (e2 / earthquake)))
+                        :time (a / already)
+                        :ARG1-of (w2 / well-09))
+                  :manner (c2 / certain))))
+
+# ::id bolt12_10465_5552.5 ::date 2012-12-06T19:27:51 ::annotator SDL-AMR-09 ::preferred
+# ::snt Although current forecasting standards cannot give us an accurate prediction of the exact time, place, and strength of an earthquake, there is considerable experience accumulated both in China and overseas in predicting to within the timeframe of a month, and the area of a province.
+# ::save-date Mon Nov 2, 2015 ::file bolt12_10465_5552_5.txt
+(h / have-concession-91
+      :ARG1 (a / accumulate-01
+            :ARG1 (e / experience
+                  :quant (c3 / considerable)
+                  :prep-in (a7 / and
+                        :op1 (p2 / predict-01
+                              :extent (t2 / temporal-quantity :quant 1
+                                    :unit (m / month)))
+                        :op2 (p6 / predict-01
+                              :ARG1 (a6 / area
+                                    :part-of (p5 / province)))))
+            :location (a5 / and
+                  :op1 (c4 / country :wiki "China" :name (n / name :op1 "China"))
+                  :op2 (o / overseas)))
+      :ARG2 (p / possible-01 :polarity -
+            :ARG1 (p3 / predict-01
+                  :ARG0 (s / standard
+                        :mod (f / forecast-01)
+                        :time (c2 / current))
+                  :ARG1 (a4 / and
+                        :op1 (t / time
+                              :time-of (e2 / earthquake))
+                        :op2 (p4 / place
+                              :location-of e2)
+                        :op3 (s2 / strong-02
+                              :ARG1 e2)
+                        :mod (e3 / exact))
+                  :mod (a3 / accurate)
+                  :beneficiary (w2 / we))))
+
+# ::id bolt12_10465_5552.6 ::date 2012-12-06T20:04:14 ::annotator SDL-AMR-09 ::preferred
+# ::snt In regions where the earthquake risk is high, warning the public and spreading disaster prevention awareness could greatly reduce casualties during earthquakes; this is the very minimum duty that any responsible government should undertake.
+# ::save-date Sun Jul 26, 2015 ::file bolt12_10465_5552_6.txt
+(m2 / multi-sentence
+      :snt1 (p / possible-01
+            :ARG1 (r2 / reduce-01
+                  :ARG0 (a2 / and
+                        :op1 (w / warn-01
+                              :ARG2 (p2 / public))
+                        :op2 (s / spread-03
+                              :ARG1 (a3 / awareness
+                                    :topic (p3 / prevent-01
+                                          :ARG1 (d2 / disaster)))))
+                  :ARG1 (c / casualty)
+                  :location (r / region
+                        :location-of (h / high-02
+                              :ARG1 (r3 / risk-01
+                                    :ARG2 (e / earthquake))))
+                  :extent (g / great)
+                  :time e))
+      :snt2 (d / duty
+            :domain (t / this)
+            :mod (m / minimum
+                  :degree (v / very))
+            :ARG1-of (u / undertake-01
+                  :ARG0 (g3 / government-organization
+                        :ARG0-of (g2 / govern-01)
+                        :ARG1-of (r4 / responsible-02)
+                        :mod (a4 / any))
+                  :ARG1-of (r5 / recommend-01))))
+
+# ::id bolt12_10465_5552.7 ::date 2012-12-06T20:12:58 ::annotator SDL-AMR-09 ::preferred
+# ::snt In the past the CCP has done a lot of these sorts of things, but on this occasion not only did nothing, but in response to queries from the public pulled out some whopping lies, playing syntax games with words like "geological disaster" and "earthquake disaster".
+# ::save-date Sun Jul 26, 2015 ::file bolt12_10465_5552_7.txt
+(h / have-concession-91
+      :ARG1 (a3 / and
+            :op1 (d2 / do-02
+                  :ARG0 p5
+                  :ARG1 (n / nothing)
+                  :mod (o2 / only :polarity -))
+            :op2 (r / respond-01
+                  :ARG0 p5
+                  :ARG1 (t4 / thing
+                        :ARG2-of (q / query-01
+                              :ARG0 (p4 / public)))
+                  :ARG2 (a / and
+                        :op1 (p / pull-01
+                              :ARG0 p5
+                              :ARG1 (t5 / thing
+                                    :ARG1-of (l2 / lie-08)
+                                    :quant (s2 / some)
+                                    :mod (w / whopping))
+                              :ARG2 (o4 / out))
+                        :op2 (p2 / play-01
+                              :ARG0 p5
+                              :ARG1 (g / game
+                                    :mod (s3 / syntax))
+                              :ARG2 (w2 / word
+                                    :example (a2 / and
+                                          :op1 (d3 / disaster
+                                                :mod (g2 / geology))
+                                          :op2 (d4 / disaster
+                                                :mod (e / earthquake)))))))
+            :time (t6 / thing
+                  :ARG1-of (o / occasion-02)
+                  :mod (t / this)))
+      :ARG2 (d / do-02
+            :ARG0 (p5 / political-party :wiki "Communist_Party_of_China" :name (n2 / name :op1 "CCP"))
+            :ARG1 (t2 / thing
+                  :quant (l / lot)
+                  :mod (s / sort
+                        :mod (t3 / this)))
+            :time (p3 / past)))
+
+# ::id bolt12_10465_5592.1 ::date 2012-12-06T20:28:51 ::annotator SDL-AMR-09 ::preferred
+# ::snt I think that if our Earthquake Administration had been able beforehand to do a simulation of big earthquakes on this Longmenshan mountain earthquake belt, then on that day of May 12, once the Earthquake Administration had measured the quake at a magnitude of 7.8, we would have been able to broadly judge the extent of damage and destruction in the earthquake disaster zone.
+# ::save-date Mon Jul 27, 2015 ::file bolt12_10465_5592_1.txt
+(t / think-01
+      :ARG0 (i / i)
+      :ARG1 (p / possible-01
+            :ARG1 (j / judge-01
+                  :ARG0 (w / we)
+                  :ARG1 (e / extent
+                        :extent-of (a / and
+                              :op1 (d / damage-01)
+                              :op2 (d2 / destroy-01))
+                        :location (z / zone
+                              :mod (d3 / disaster
+                                    :mod (e2 / earthquake))))
+                  :manner (b / broad))
+            :condition (p2 / possible-01
+                  :ARG1 (s / simulate-01
+                        :ARG0 (g / government-organization :wiki "China_Earthquake_Administration" :name (n / name :op1 "Earthquake" :op2 "Administration")
+                              :poss w)
+                        :ARG1 (e3 / earthquake
+                              :mod (b3 / big)
+                              :location (b4 / belt
+                                    :mod (e4 / earthquake)
+                                    :mod (m / mountain :wiki "Longmen_Mountains" :name (n2 / name :op1 "Longmenshan"))
+                                    :mod (t2 / this)))
+                        :time (b2 / beforehand)))
+            :time (m2 / measure-01
+                  :ARG0 g
+                  :ARG1 (q / quake)
+                  :ARG3 (s2 / seismic-quantity :quant 7.8))
+            :time (d5 / day
+                  :mod (t3 / that)
+                  :ARG1-of (m3 / mean-01
+                        :ARG2 (d4 / date-entity :month 5 :day 12)))))
+
+# ::id bolt12_10465_5592.2 ::date 2012-12-06T20:43:18 ::annotator SDL-AMR-09 ::preferred
+# ::snt If the simulation program was well designed, circumstances like debris blocking roads, heavy rainfall obstructing parachute drops, power and communication outages should all have been within expectations.
+# ::save-date Sat Jan 30, 2016 ::file bolt12_10465_5592_2.txt
+(r4 / recommend-01
+      :ARG1 (c3 / conform-01
+            :ARG1 (c / circumstance
+                  :mod (a / all)
+                  :example (a2 / and
+                        :op1 (b2 / block-01
+                              :ARG1 (r2 / road)
+                              :ARG3 (d2 / debris))
+                        :op2 (o2 / obstruct-01
+                              :ARG0 (r / rain-01
+                                    :manner (h / heavy))
+                              :ARG1 (d3 / drop-01
+                                    :ARG1 (p2 / parachute)))
+                        :op3 (o3 / outage
+                              :mod (p3 / power-01))
+                        :op4 (o / outage
+                              :mod (c2 / communicate-01))))
+            :ARG2 (e / expect-01))
+      :condition (d / design-01
+            :ARG1 (p / program
+                  :purpose (s / simulate-01))
+            :manner (g / good-02)))
+
+# ::id bolt12_10465_5592.3 ::date 2012-12-06T20:47:28 ::annotator SDL-AMR-09 ::preferred
+# ::snt Instead in this instance the Liberation Army headquarters emergency contingency plan obviously was not a contingency plan designed with earthquakes as the assumed condition, as the soldiers all rushed straight to Wenchuan, without immediately sending out troops in the direction of badly-hit areas Beichuan, Qingchuan and Gansu's Longnan; only 24 hours later was the full extent of the disaster area taken into consideration.
+# ::save-date Mon Jul 20, 2015 ::file bolt12_10465_5592_3.txt
+(m2 / multi-sentence
+      :snt1 (p / plan-01
+            :ARG1 (p2 / plan-01
+                  :ARG0 (h3 / headquarters
+                        :mod (m3 / military :wiki "People's_Liberation_Army" :name (n / name :op1 "Liberation" :op2 "Army")))
+                  :mod (c3 / contingency
+                        :mod (e / emergency)))
+            :ARG1-of (c2 / cause-01
+                  :ARG0 (a2 / and
+                        :op1 (r / rush-01
+                              :ARG0 (s2 / soldier
+                                    :mod (a4 / all))
+                              :ARG2 (c6 / county :wiki "Wenchuan_County" :name (n6 / name :op1 "Wenchuan"))
+                              :ARG1-of (s3 / straight-04))
+                        :op2 (s / send-03 :polarity -
+                              :ARG1 (t4 / troop)
+                              :ARG5 (a6 / and
+                                    :op1 (c7 / city :wiki "Beichuan_Qiang_Autonomous_County" :name (n5 / name :op1 "Beichuan"))
+                                    :op2 (c8 / city :wiki "Qingchuan_County" :name (n4 / name :op1 "Qingchuan"))
+                                    :op3 (c9 / city :wiki "Longnan" :name (n3 / name :op1 "Longnan")
+                                          :location (p3 / province :wiki "Gansu" :name (n2 / name :op1 "Gansu")))
+                                    :ARG1-of (h / hit-01
+                                          :ARG1-of (b / bad-05)))
+                              :time (i3 / immediate))))
+            :prep-in (i2 / instance
+                  :mod (t / this))
+            :ARG1-of (o / obvious-01)
+            :mod (c4 / contingency)
+            :ARG1-of (d / design-01 :polarity -
+                  :manner (a3 / assume-02
+                        :ARG1 (e2 / earthquake)
+                        :ARG2 (t2 / thing
+                              :ARG2-of (c5 / condition-01))))
+            :ARG1-of (i / instead-of-91))
+      :snt2 (c / consider-02
+            :ARG1 (e3 / extent
+                  :extent-of (a7 / area
+                        :mod (d2 / disaster))
+                  :mod (f / full))
+            :time (l / late
+                  :op1 (t5 / temporal-quantity :quant 24
+                        :unit (h2 / hour)
+                        :mod (o2 / only))
+                  :degree (m / more))))
+
+# ::id bolt12_10465_5592.4 ::date 2012-12-07T06:12:04 ::annotator SDL-AMR-09 ::preferred
+# ::snt In addition, the breakdown in communication also brought a serious problem to the surface. In the past, Red Army regiments were able to maintain contact with central headquarters by relying on just one battered radio. On this occasion though, people had no way to deal with the communication failure.
+# ::save-date Thu Feb 4, 2016 ::file bolt12_10465_5592_4.txt
+(m / multi-sentence
+      :snt2 (p2 / possible-01
+            :ARG1 (m2 / maintain-01
+                  :ARG0 (r / regiment
+                        :part-of (m3 / military :wiki "People's_Liberation_Army" :name (n / name :op1 "Red" :op2 "Army")))
+                  :ARG1 (c3 / contact-01
+                        :ARG0 r
+                        :ARG1 (h / headquarters
+                              :mod (c4 / central)
+                              :part-of m3))
+                  :manner (r2 / rely-01
+                        :ARG0 r
+                        :ARG1 (r3 / radio
+                              :ARG1-of (b3 / batter-01)
+                              :quant (j / just :op1 1))))
+            :time (p3 / past))
+      :snt1 (a2 / and
+            :op2 (b / bring-01
+                  :ARG0 (b2 / break-down-12
+                        :ARG1 (c2 / communicate-01))
+                  :ARG1 (p / problem
+                        :ARG1-of (s2 / serious-02))
+                  :ARG2 (s / surface)
+                  :mod (a / also)))
+      :snt3 (h3 / have-concession-91
+            :ARG1 (h2 / have-03 :polarity -
+                  :ARG0 (p4 / person)
+                  :ARG1 (w / way
+                        :manner-of (d / deal-01
+                              :ARG2 (f / fail-01
+                                    :ARG0 (c5 / communicate-01))))
+                  :time (t2 / thing
+                        :ARG1-of (o / occasion-02)
+                        :mod (t / this)))))
+
+# ::id bolt12_10465_5592.5 ::date 2012-12-07T06:40:44 ::annotator SDL-AMR-09 ::preferred
+# ::snt It is clear that preparations prior to the event were not constructed on the basis of an earthquake disaster simulation.
+# ::save-date Fri May 29, 2015 ::file bolt12_10465_5592_5.txt
+(c / clear-06
+      :ARG1 (c2 / construct-01 :polarity -
+            :ARG1 (t / thing
+                  :ARG1-of (p / prepare-01
+                        :time (p2 / prior-to
+                              :op1 (e2 / event)))
+                  :ARG1-of (b / base-02
+                        :ARG2 (s / simulate-01
+                              :ARG1 (d / disaster
+                                    :mod (e / earthquake)))))))
+
+# ::id bolt12_10474_1421.1 ::date 2012-12-07T06:54:13 ::annotator SDL-AMR-09 ::preferred
+# ::snt While it should have been a disaster relief command that takes overall leadership, it has suddenly come face-to-face with the broad base of disaster victims, directly dealing with them.
+# ::save-date Sat Jul 25, 2015 ::file bolt12_10474_1421_1.txt
+(c / contrast-01
+      :ARG1 (a / and
+            :op1 (f2 / face-01
+                  :ARG0 (i / it)
+                  :ARG1 (v / victim
+                        :mod (d4 / disaster)
+                        :mod (b2 / base
+                              :ARG1-of (b / broad-02)))
+                  :manner (s / sudden))
+            :op2 (d / deal-01
+                  :ARG0 i
+                  :ARG2 v
+                  :ARG1-of (d3 / direct-02)))
+      :ARG2 (r2 / recommend-01
+            :ARG1 (c4 / command-02
+                  :ARG1 (r / relieve-01
+                        :ARG1 (d2 / disaster))
+                  :ARG0-of (l / lead-02
+                        :mod (o3 / overall)))))
+
+# ::id bolt12_10474_1421.2 ::date 2012-12-07T07:00:24 ::annotator SDL-AMR-09 ::preferred
+# ::snt The lack or serious shortage of intermediate layers of Party organizations and units between the two has resulted in its inability to consider major issues with endless minor issues on hand, such that even if it is highly capable, it won't last long, as it will be dragged down by numerous petty things.
+# ::save-date Thu Feb 4, 2016 ::file bolt12_10474_1421_2.txt
+(r / result-01
+      :ARG1 (o / or
+            :op1 (l / lack-01
+                  :ARG0 (b / between
+                        :op1 (t / thing :quant 2))
+                  :ARG1 (l2 / layer
+                        :mod (i / intermediate)
+                        :part-of (a / and
+                              :op1 (o2 / organization)
+                              :op2 (u / unit)
+                              :part-of (p3 / party))))
+            :op1 (s / short-06
+                  :ARG1 b
+                  :ARG2 l2
+                  :ARG1-of (s2 / serious-02)))
+      :ARG2 (p / possible-01 :polarity -
+            :ARG1 (c / consider-02
+                  :ARG0 p3
+                  :ARG1 (i2 / issue-02
+                        :ARG1-of (m / major-02)))
+            :condition (h / have-03
+                  :ARG1 (i3 / issue-02
+                        :ARG1-of (m2 / minor-01)
+                        :quant (e / endless))
+                  :location (h2 / hand)))
+      :ARG0-of (c2 / cause-01
+            :ARG1 (l3 / last-01 :polarity -
+                  :ARG1 c3
+                  :ARG2 (l4 / long-03
+                        :ARG1 c3)
+                  :concession (e3 / even-if
+                        :op1 (c3 / capable-01
+                              :ARG1 p3
+                              :degree (h3 / high)
+                              :mod (e2 / even)))
+                  :ARG1-of (c4 / cause-01
+                        :ARG0 (d / drag-01
+                              :ARG0 (t2 / thing
+                                    :quant (n / numerous)
+                                    :mod (p2 / petty))
+                              :ARG1 c3
+                              :ARG2 (d2 / down))))))
+
+# ::id bolt12_10474_1421.3 ::date 2012-12-07T07:19:23 ::annotator SDL-AMR-09 ::preferred
+# ::snt This would have been unimaginable during the Great Tangshan Earthquake. A time without volunteers or mental workers, such petty things as directly dealing with average people were performed by the most primary Party branches, as well as enterprises and public institutions.
+# ::save-date Tue Jul 28, 2015 ::file bolt12_10474_1421_3.txt
+(m / multi-sentence
+      :snt1 (p / possible-01 :polarity -
+            :ARG1 (i / imagine-01
+                  :ARG1 (t / this))
+            :time (e / earthquake :wiki "1976_Tangshan_earthquake" :name (n / name :op1 "Great" :op2 "Tangshan" :op3 "Earthquake")))
+      :snt2 (p2 / perform-02
+            :ARG0 (a / and
+                  :op1 (b / branch
+                        :mod (p3 / primary
+                              :degree (m2 / most))
+                        :part-of (p9 / party))
+                  :op2 (e2 / enterprise)
+                  :op3 (i2 / institution
+                        :ARG1-of (p4 / public-02)))
+            :ARG1 (t2 / thing
+                  :example (d / deal-01
+                        :ARG2 (p7 / person
+                              :ARG1-of (a2 / average-03))
+                        :ARG1-of (d2 / direct-02))
+                  :mod (p8 / petty)
+                  :mod (s / such))
+            :time (o2 / or
+                  :op1 (p5 / person :polarity -
+                        :ARG0-of (v / volunteer-01))
+                  :op2 (p6 / person :polarity -
+                        :ARG0-of (w / work-01
+                              :mod (m3 / mental))))))
